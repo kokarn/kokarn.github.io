@@ -33,52 +33,110 @@
             box-sizing: border-box;
         }
         
+        h1 {
+            margin-top: 0;
+            text-align: center;
+        }
+        
+        p {
+            text-align: center;
+        }
+        
         svg {
             height: 50px;
             width: 50px;
         }
         
         a {
+            color: inherit;
             text-decoration: none;
         }
         
+        .content-wrapper {
+            background-color: rgba(0,0,0,0.8);
+            margin: 0 auto;
+            max-width: 960px;
+            min-height: 100%;
+        }
+        
         .projects {
-            text-shadow: 2px 2px #000000;
-            bottom: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        .projects a {
+            display: block;
+            text-align: center;
+        }
+        
+        .projects img {
+            height: 300px;
+            width: 300px;
+        }
+        
+        .social {
+            bottom: 20px;
+            display: flex;
+            height: 80px;
+            justify-content: center;
             left: 0;
-            padding: 20px 40px;
-            position: absolute;
+            position: fixed;
             right: 0;
+        }
+        
+        .social a {
+            margin: 0 10px;
         }
     </style>
   </head>
   <body>
-      <h1>
-          Hi! I'm Oskar.
-      </h1>
-      <a href="https://www.reddit.com/u/kokarn">
-        <svg xmlns="http://www.w3.org/2000/svg"
-        aria-label="Reddit" role="img"
-        viewBox="0 0 512 512"><rect
-        width="512" height="512"
-        rx="15%"
-        fill="#f40"/><g fill="#fff"><ellipse cx="256" cy="307" rx="166" ry="117"/><circle cx="106" cy="256" r="42"/><circle cx="407" cy="256" r="42"/><circle cx="375" cy="114" r="32"/></g><g stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="m256 196 23-101 73 15" stroke="#fff" stroke-width="16"/><path d="m191 359c33 25 97 26 130 0" stroke="#f40" stroke-width="13"/></g><g fill="#f40"><circle cx="191" cy="287" r="31"/><circle cx="321" cy="287" r="31"/></g></svg>
-    </a>
-      <a href="https://www.twitter.com/oskarrisberg">
-        <svg xmlns="http://www.w3.org/2000/svg"
-        aria-label="Twitter" role="img"
-        viewBox="0 0 512 512"><rect
-        width="512" height="512"
-        rx="15%"
-        fill="#1da1f3"/><path fill="#fff" d="M437 152a72 72 0 0 1-40 12 72 72 0 0 0 32-40 72 72 0 0 1-45 17 72 72 0 0 0-122 65 200 200 0 0 1-145-74 72 72 0 0 0 22 94 72 72 0 0 1-32-7 72 72 0 0 0 56 69 72 72 0 0 1-32 1 72 72 0 0 0 67 50 200 200 0 0 1-105 29 200 200 0 0 0 309-179 200 200 0 0 0 35-37"/></svg>
-    </a>
-      
-    <div class="projects">
-        <div>
-            I do a bunch of big & small projects as a hobby. 
+      <div class="content-wrapper">
+        <h1>
+            Hi! I'm Oskar 👋
+        </h1>
+        <p>
+            I'm a developer by trade and make a bunch of projects related to gaming in my spare time.
+        </p>   
+        <div class="projects">
+            <a href="https://developertracker.com">
+                <img src="./developertracker.jpg">
+                <div>
+                    Developertracker
+                </div>
+            </a>
+            <a href="/tarkov-tools/">
+                <img src="./tarkov-tools.jpg">
+                <div>
+                    Tarkov ammo graph
+                </div>
+            </a>
         </div>
-        Here's the latest stuff:
-      <a href="/tarkov-tools/">Tarkov Ammo Graph</a>
+        <div class="social">
+            <a href="https://www.reddit.com/u/kokarn">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                aria-label="Reddit" role="img"
+                viewBox="0 0 512 512"><rect
+                width="512" height="512"
+                rx="15%"
+                fill="#f40"/><g fill="#fff"><ellipse cx="256" cy="307" rx="166" ry="117"/><circle cx="106" cy="256" r="42"/><circle cx="407" cy="256" r="42"/><circle cx="375" cy="114" r="32"/></g><g stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="m256 196 23-101 73 15" stroke="#fff" stroke-width="16"/><path d="m191 359c33 25 97 26 130 0" stroke="#f40" stroke-width="13"/></g><g fill="#f40"><circle cx="191" cy="287" r="31"/><circle cx="321" cy="287" r="31"/></g></svg>
+            </a>
+            <a href="https://www.twitter.com/oskarrisberg">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                aria-label="Twitter" role="img"
+                viewBox="0 0 512 512"><rect
+                width="512" height="512"
+                rx="15%"
+                fill="#1da1f3"/><path fill="#fff" d="M437 152a72 72 0 0 1-40 12 72 72 0 0 0 32-40 72 72 0 0 1-45 17 72 72 0 0 0-122 65 200 200 0 0 1-145-74 72 72 0 0 0 22 94 72 72 0 0 1-32-7 72 72 0 0 0 56 69 72 72 0 0 1-32 1 72 72 0 0 0 67 50 200 200 0 0 1-105 29 200 200 0 0 0 309-179 200 200 0 0 0 35-37"/></svg>
+            </a>
+            <a href="https://www.github.com/kokarn">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                aria-label="GitHub" role="img"
+                viewBox="0 0 512 512"><rect
+                width="512" height="512"
+                rx="15%"
+                fill="#1B1817"/><path fill="#fff" d="M335 499c14 0 12 17 12 17H165s-2-17 12-17c13 0 16-6 16-12l-1-50c-71 16-86-28-86-28-12-30-28-37-28-37-24-16 1-16 1-16 26 2 40 26 40 26 22 39 59 28 74 22 2-17 9-28 16-35-57-6-116-28-116-126 0-28 10-51 26-69-3-6-11-32 3-67 0 0 21-7 70 26 42-12 86-12 128 0 49-33 70-26 70-26 14 35 6 61 3 67 16 18 26 41 26 69 0 98-60 120-117 126 10 8 18 24 18 48l-1 70c0 6 3 12 16 12z"/></svg>
+            </a>
+        </div>
     </div>
   </body>
 </html>
