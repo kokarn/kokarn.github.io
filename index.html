@@ -10,11 +10,6 @@
     </script>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <style>
-        html {
-            height: 100%;
-            overflow: hidden;
-        }
-        
         body {
             backdrop-filter: blur(10px);
             background-color: #04040b;
@@ -62,10 +57,12 @@
         .projects {
             display: flex;
             justify-content: space-around;
+            flex-flow: wrap;
         }
         
         .projects a {
             display: block;
+            margin-bottom: 5vh;
             text-align: center;
         }
         
@@ -75,13 +72,11 @@
         }
         
         .social {
-            bottom: 20px;
             display: flex;
             height: 80px;
             justify-content: center;
-            left: 0;
-            position: fixed;
-            right: 0;
+            margin-top: 5vh;
+            width: 100%;
         }
         
         .social a {
@@ -108,6 +103,18 @@
                 <img src="./tarkov-tools.jpg">
                 <div>
                     Tarkov ammo graph
+                </div>
+            </a>
+            <a href="https://notifyy-mcnotifyface.herokuapp.com/">
+                <img src="./notifyy-mcnotifyface.jpg">
+                <div>
+                    Notifyy McNotifyFace
+                </div>
+            </a>
+            <a href="https://hockey-mchockeyface.herokuapp.com/">
+                <img src="./hockey-mchockeyface.jpg">
+                <div>
+                    Hockey McHockeyFace
                 </div>
             </a>
         </div>
