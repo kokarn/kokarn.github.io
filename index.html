@@ -65,13 +65,24 @@
         }
         
         .projects a {
+            border-radius: 5px;
             display: block;
             margin-bottom: 5vh;
+            padding: 20px;
             text-align: center;
+            transition: all 0.3s ease;
+        }
+        
+        .projects a:hover {
+            background-color: rgba(0, 0, 0, 0.6);
         }
         
         .projects img {
             height: 300px;
+            width: 300px;
+        }
+        
+        .info-wrapper {
             width: 300px;
         }
         
@@ -106,38 +117,66 @@
         <div class="projects">
             <a href="https://developertracker.com">
                 <img src="./developertracker.jpg">
-                <div>
-                    Developertracker
+                <div class="info-wrapper">
+                    <h2>Developertracker</h2>
+                    <p>
+                        Platform for tracking various developers from various games
+                    </p>
                 </div>
             </a>
             <a href="/tarkov-tools/">
                 <img src="./tarkov-tools.jpg">
-                <div>
-                    Tarkov ammo graph
+                <div class="info-wrapper">
+                    <h2>
+                        Tarkov ammo graph
+                    </h2>
+                    <p>
+                        Interactive graph for all ammo on Escape from Tarkov
+                    </p>
                 </div>
             </a>
             <a href="/csgo-audio-radius/">
                 <img src="./csgo-radar.jpg">
-                <div>
-                    CS:GO audio radius
+                <div class="info-wrapper">
+                    <h2>
+                        CS:GO audio radius
+                    </h2>
+                    <p>
+                        A straightforward tool to visualize how far you can hear on maps
+                    </p>
                 </div>
             </a>
             <a href="https://notifyy-mcnotifyface.herokuapp.com/">
                 <img src="./notifyy-mcnotifyface.jpg">
-                <div>
-                    Notifyy McNotifyFace
+                <div class="info-wrapper">
+                    <h2>
+                        Notifyy McNotifyFace
+                    </h2>
+                    <p>
+                        Easy webhook notifications using Telegram
+                    </p>
                 </div>
             </a>
             <a href="https://hockey-mchockeyface.herokuapp.com/">
                 <img src="./hockey-mchockeyface.jpg">
-                <div>
-                    Hockey McHockeyFace
+                <div class="info-wrapper">
+                    <h2>
+                        Hockey McHockeyFace
+                    </h2>
+                    <p>
+                        ical calendars for all major swedish hockey teams
+                    </p>
                 </div>
             </a>
             <a href="https://onytt.se">
                 <img src="./onytt.jpg">
-                <div>
-                    Onytt
+                <div class="info-wrapper">
+                    <h2>
+                        Onytt
+                    </h2>
+                    <p>
+                        Simple website for my parents shop
+                    </p>
                 </div>
             </a>
         </div>
