@@ -51,7 +51,7 @@
         }
         
         .content-wrapper {
-            background-color: rgba(0,0,0,0.8);
+            background-color: rgba(0, 0, 0, 0.6);
             margin: 0 auto;
             max-width: 1260px;
             min-height: 100%;
@@ -64,16 +64,28 @@
             margin: 0 3vw;
         }
         
+        .projects-underlay {
+            height: 100%;
+            pointer-events: none;
+            position: absolute;
+            transition: background-color 0.4s ease;
+            width: 100%;
+        }
+        
         .projects a {
             border-radius: 5px;
             display: block;
             margin-bottom: 5vh;
             padding: 20px;
             text-align: center;
-            transition: all 0.3s ease;
         }
         
         .projects a:hover {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .projects a:hover ~ .projects-underlay {
             background-color: rgba(0, 0, 0, 0.6);
         }
         
@@ -185,6 +197,7 @@
                     </p>
                 </div>
             </a>
+            <div class="projects-underlay"></div>
         </div>
         <div class="social">
             <a href="https://www.reddit.com/u/kokarn" title="Me on Reddit">
